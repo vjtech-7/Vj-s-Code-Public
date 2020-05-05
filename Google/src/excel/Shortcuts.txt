@@ -1,0 +1,5 @@
+
+ Shift + ctrl + f -> Indentation
+main + ctrl + spacebar -> Prints main method
+ctrl + shift + s -> Save All Files
+Alt + shift + x, j -> execute code
