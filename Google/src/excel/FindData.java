@@ -12,7 +12,7 @@ public class FindData {
 		//int x= (str.indexOf("c")-3) - (str.indexOf("(")+1) ;
 		
 		String str1 = new String(arr);
-		System.out.println(str1);
+		System.out.println(str1 + "Hello");
 		
 		
 	}
