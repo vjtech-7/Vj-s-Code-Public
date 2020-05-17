@@ -49,12 +49,16 @@ public class Excel_Loop {
 			driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[1]/div/div[2]/input")).sendKeys(str + Keys.ENTER);
 			WebElement results = driver.findElement(By.xpath("//div[@id='result-stats']"));
 		    String str1 = results.getText();
+		    row.createCell(j+1);
+		    Cell cellx = row.createCell(1);
+		    cellx.setCellValue(str1);
 		    
 		    char[] arr = new char[] {' ',' ',' ',' '};
 			
 			str1.getChars(str1.indexOf("(")+1, str1.indexOf("c")-3, arr, 0);
 			
 			String res_str1 = new String(arr);
+			
 			Cell cell = row.createCell(2);
 		    cell.setCellValue(res_str1);
 		    Cell cell1 = row.createCell(4);
